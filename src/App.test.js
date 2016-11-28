@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import { shallow } from 'enzyme'
+import { expect } from 'chai'
+import App from '../src/App'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+const wrapper = shallow(<App />);
+
+describe('(Component) App', () => {
+  it('renders...', () => {
+    expect(wrapper).to.have.length(1);
+  });
 });
