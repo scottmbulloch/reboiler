@@ -112,7 +112,7 @@ module.exports = {
       {
         test: /\.scss$/,
         include: paths.appSrc,
-        loaders: ["style", "css", "sass"]
+        loaders: ["style", "css", "sass?includePaths[]=" + path.resolve(__dirname, 'node_modules')]
       },
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
