@@ -1,5 +1,3 @@
-'use strict';
-
 import jsdom from 'jsdom';
 
 global.document = jsdom.jsdom('<html><body></body></html>');
