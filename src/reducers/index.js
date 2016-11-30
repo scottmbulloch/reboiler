@@ -1,14 +1,8 @@
-import * as actions from '../constants/actionTypes';
+import { combineReducers } from 'redux';
+import countReducer from './countReducer';
 
-let initialState = { count: 0 };
+const root = combineReducers({
+  countReducer
+});
 
-function rootReducer(state = initialState, action = {}) {
-  switch (action.type) {
-    case actions.INC_COUNT:
-      return Object.assign({}, state, { count: (state.count + 1) });
-    default:
-      return state;
-  }
-};
-
-export default rootReducer;
+export default root;
