@@ -3,10 +3,15 @@ This project was originally created with [Create React App](https://github.com/f
  * SASS support
  * Bootstrap 3
  * Mocha/Enzyme/Sinon for testing instead of Jest
+ * Redux
 
 Todo:
  * React Router
- * Redux
+ * Linting
+ * Redux thunk
+ 
+To Consider implementing:
+ * ES7 async/await functionality
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
