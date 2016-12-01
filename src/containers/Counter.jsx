@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from '../actions/CountActions';
 
-class Counter extends React.Component {
+export class Counter extends React.Component {
   render() {
     const { actions: { incrementCount }, count } = this.props;
     return (
