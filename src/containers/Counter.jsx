@@ -4,16 +4,11 @@ import { connect } from 'react-redux';
 import * as actions from '../actions/CountActions';
 
 class Counter extends React.Component {
-  componentWillMount() {
-    console.log(this.props);
-  }
-
   render() {
-    console.log('count' , this.props);
     const { actions: { incrementCount }, count } = this.props;
     return (
       <div>
-        {count}
+        You've pressed 'Bump' {count} time{count === 1 ? '' : 's'}
         <br />
         <button onClick={incrementCount}>Bump</button>
       </div>
@@ -27,9 +22,8 @@ Counter.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
-    count: state.count
+    count: state.countReducer.count
   };
 }
 
