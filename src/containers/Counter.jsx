@@ -19,18 +19,18 @@ class Counter extends React.Component {
 Counter.propTypes = {
   actions: PropTypes.object.isRequired,
   count: PropTypes.number.isRequired
-}
+};
 
 const mapStateToProps = (state) => {
   return {
     count: state.countReducer.count
   };
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     actions: bindActionCreators(actions, dispatch)
   }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
