@@ -4,12 +4,12 @@ This project was originally created with [Create React App](https://github.com/f
  * Bootstrap 3
  * Mocha/Enzyme/Sinon for testing instead of Jest
  * Redux
-
-Todo:
  * React Router
  * Linting
+
+Todo:
  * Redux thunk
- 
+
 To Consider implementing:
  * ES7 async/await functionality
 
